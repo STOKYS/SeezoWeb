@@ -1,15 +1,15 @@
-document.getElementById("themeChanger").addEventListener("click", changeTheme);
+document.getElementById("themeChangerLight").addEventListener("click", changeThemeLight);
+document.getElementById("themeChangerDark").addEventListener("click", changeThemeDark);
 
-let isDark = 1;
+function changeThemeLight() {
+    document.getElementById("themeChangerLight").disabled = true;
+    document.getElementById("themeChangerDark").disabled = false;
+    document.getElementsByTagName("LINK")[3].href = "styles/lightTheme.css";
 
-function changeTheme(){
-    if (isDark == 1){
-        isDark = 0;
-        document.getElementById("themeChanger").innerText = "Dark";
-        document.getElementsByTagName("LINK")[3].href = "styles/lightTheme.css";
-    } else {
-        isDark = 1;
-        document.getElementById("themeChanger").innerText = "Light";
-        document.getElementsByTagName("LINK")[3].href = "styles/darkTheme.css";
-    }
+}
+
+function changeThemeDark() {
+    document.getElementById("themeChangerDark").disabled = true;
+    document.getElementById("themeChangerLight").disabled = false;
+    document.getElementsByTagName("LINK")[3].href = "styles/darkTheme.css";
 }

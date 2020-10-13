@@ -1,3 +1,19 @@
+* {
+    color: black;
+}
+
 body{
     background-color: white;
+}
+
+header  {
+    background-color: rgb(240, 240, 240);
+}
+
+footer {
+    background-color: rgb(240, 240, 240);
+}
+
+.img-group img{
+    background-color: rgba(154,36,231,0.2);
 }

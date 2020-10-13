@@ -34,39 +34,12 @@
     src: url(../fonts/Oneday.ttf);
 }
 
-.btn-group{
-    height: 80px;
-    margin: auto;
-}
-
-.btn-group button {
-    background-color: rgba(0,0,0,0);
-    border: 0px;
-    border-left: 8px solid;
-    color: white;
-    cursor: pointer;
-    float: left;
-    width: 25%;
-    height: 100%;
-}
-
-.btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.btn-group button:hover {
-    background-color: rgba(154,36,231,0.2);
-}
-
 body {
-    transition: background-color 2s ease-out;
+    transition: background-color 1s ease-out;
 }
 
 header {
     height: 80px;
-    background-color: rgb(8, 8, 8);
     position: sticky;
     top: 0;
 }
@@ -80,7 +53,10 @@ main {
 
 footer {
     height: 80px;
-    background-color: rgb(8, 8, 8);
+}
+
+button{
+    background-color: rgba(0,0,0,0);
 }
 
 #loading {
@@ -119,4 +95,56 @@ footer {
     font-family: gilroy;
     transition: color 1s ease, border-color 1s ease;
     margin: 0px 0px 0px 310px;
+}
+
+#dropdownbtn{
+    border: 0;
+    height: 100%;
+    float: right;
+    padding: 0;
+    margin: 0;
+    width: 80px;
+}
+
+#dropdownbtnimg{
+    transition: transform 0.2s linear;
+    transform: rotate(0deg);
+}
+
+#menu{
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0px;
+    background-color: rgba(20,20,20,0.5);
+    height: 500px;
+    width: 500px;
+    float: right;
+    /*transition: display 1s linear;*/
+}
+
+.img-group{
+    height: 80px;
+    width: 100%;
+    margin: auto;
+}
+
+.img-group div{
+    float: left;
+    width: 25%;
+    height: 80px;
+}
+
+.img-group>div>img {
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+    border-left: 8px solid;
+    color: white;
+    cursor: pointer;
+    height: 80px;
+    padding: 10px 83px 10px 83px;
+}
+
+.img-group img:hover {
+    background-color: rgba(154,36,231,0.2);
 }

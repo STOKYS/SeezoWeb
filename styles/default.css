@@ -1,3 +1,7 @@
+* {
+    font-family: gilroy;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -42,13 +46,12 @@ header {
     height: 80px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 main {
-    height: 2000px;
     margin: auto;
     width: 80%;
-    border: 1px grey solid;
 }
 
 footer {
@@ -57,6 +60,34 @@ footer {
 
 button{
     background-color: rgba(0,0,0,0);
+}
+
+hr.main{
+    border-top: 2px solid rgb(117, 117, 117);
+    width: 95%;
+}
+
+hr.side{
+    border-top: 1px solid rgb(54, 54, 54);
+    width: 95%;
+}
+
+#selected{
+    border: 1px grey solid;
+    padding: 20px 50px 20px 50px;
+    background-color: #161616;
+    height: 500px;
+}
+
+#selected h3{
+    padding-left: 25px;
+    color: rgb(80,80,80);
+}
+
+#selected p{
+    padding: 0px 50px 0px 50px;
+    color: rgb(120,120,120);
+    /*text-align: justify;*/
 }
 
 #loading {
@@ -143,6 +174,7 @@ button{
     cursor: pointer;
     height: 80px;
     padding: 10px 83px 10px 83px;
+    transition: filter 0.5s ease;
 }
 
 .img-group img:hover {
